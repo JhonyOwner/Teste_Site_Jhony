@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Jhony</title>
+
+<!-- LINKAR O <MAIN.CSS> AO DOC <INDEX.HTML> -->
+    <link rel="stylesheet" href="main.css">
+
+<!-- LINK PARA AS FONTES UTILIZADAS NA LINHA DE CÓDIGO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungeefamily=Merriweather&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>                                <!-- CABEÇALHO -->
+        <div class="container">             <!-- DEIXAR ORGANIZADO -->
+            <h1>
+                <a href= "/" style="color: black;">Site do Jhony</a>     <!-- CRIAR UM LINK PARA QUANDO CLICADO NA LOGO SEJA RECARREGADO A PAGINA, ALEM DE DEIXAR PRETO -->
+            </h1>
+            <nav>                           <!-- CRIAR UMA LISTA -->
+                <ul>                        <!-- LISTA DESORDENADA: SEM NUMERAÇÃO -->
+                    <li>
+                        <a href="#contato" title="contato">Contato</a>     <!-- ESCRITA COM LINK PARA O MEUS CONTATOS -->
+                    </li>
+                    <li>
+                        <a href="#sobre" title="sobre">Sobre mim</a>    <!-- ESCRITA COM LINK PARA O MEU SOBRE -->
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sobre">
+        <div class="container">
+            <img class="minha_img" src="Material de Apoio/images/eu.png" alt="Imagem de Jhony"/>
+            <div>
+                <h2>Sobre mim</h2>
+                    <p>
+                        Olá, me chamo João Vitor Graça. Tenho 19 anos, sou de Taubaté - Sp.
+                    </p>
+                    <p>
+                        Minha história começa quando tinha por volta de 15 anos, comecei a jogar GTA RP, com isso, veio a vontade de iniciar um server totalmente meu. Com isso, comecei a estudar pelo YT sobre programação etc. Consegui criar minhas cidades, tinha um futuro alí, mas com o decorrer de ser jovem, não ter conhecimento sobre a vida ainda, desisti de tudo. Entrei em nutrição ano passado que é algo que gosto mas resolvi sair por <i>"n"</i>" motivos e comecei a me interessar realmente na área da programação.
+                    </p>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <div class="info_contato">
+                <h2>Entre em contato:</h2>
+                <form>
+                    <input type="text" placeholder="Seu Nome" required />
+                    <input type="email" placeholder="Digite seu E-mail" required />
+                    <input type="tel" placeholder="Seu Telefone" required />
+                    <textarea placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+                <ul class="logos">
+                    <h5>!! Clique na imagem e será redirecionado !!</h5>
+                    <li>
+                        <a href="https://www.instagram.com/jvgraca/" target="_blank" title="Siga-me no Instagram">         <!-- Criado o espaço para Seguir no Instagram -->
+                            <img src="Material de Apoio/images/instagram.png" alt="Logo Instagram" />     <!-- Logo Instagram -->
+                        </a>    
+                    </li>
+                    <li>
+                        <a href="https://github.com/JhonyOwner" target="_blank" title="Siga-me no GitHub">         <!-- Criado o espaço para Seguir no GITHUB -->
+                            <img src="Material de Apoio/images/GitHub.png" alt="Logo GitHub" />     <!-- Logo GITHUB -->
+                        </a>    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

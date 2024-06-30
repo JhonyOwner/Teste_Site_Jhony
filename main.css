@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;      /* REMOVER A MARGEM */
+    padding: 0;     /* REMOVER ESPAÇAMENTO INTERNO */
+}
+
+header {
+    padding: 12px 0;
+    background-color: rgb(255, 187, 0);
+}
+
+header h1 {          /* SETAR A FONTE DO TITULO */
+    font-family: "Merriweather";serif;
+    font-weight: bold;                  
+    font-size: 50px;                /* TAMANHO DELA */
+}
+
+
+header nav li{
+    display: inline;        /* Setar um ao lado do outro */
+    margin-left: 12px;      /* Margem somente à esquerda */
+    font-size: 20px;        /* Tamanho da fonte */
+}
+
+header nav li a,
+h1 a {                       /* Cor preta e remover o _ */
+    color: black;
+    text-decoration: none;
+}
+
+header nav li a:hover {             /* Colocar _ + cor */
+    color: #314e9e;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1700px;      /* Largura Maxima */
+    width: 100%;           /* Ocupar 100% do tamanho desejado */ 
+    margin: 0 /*para ↑ e ↓*/ auto   /*para → e ←*/;         /* ↑ → ↓ ← */ 
+}
+
+header .container,
+section .container {
+    display: flex;          /* Libera Modificações */ 
+    align-items: center;       /* Centralizou no campo */
+    justify-content: space-between; /* Separou os itens de espaço de modo igualitário um extrema direita e outro no oposto */
+}
+
+.logos img {
+    height: 50px;           /* Tamanho da Imagem */
+}
+
+.logos li {
+    display: inline;          /* Deixa um ao lado do outro */
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.logos li a {
+    text-decoration: none;      /*Remove a sujeirinha */
+}
+
+section .container {
+    align-items: self-start;
+}
+
+section {
+    padding: 24px 0;        /* Distancia */ 
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+section h2,
+section h5 {
+    margin-bottom: 18px;        /* Distancia h2 baixo */
+}
+
+section p {
+    margin-bottom: 12px;        /* Distancia p baixo */
+}
+
+.minha_img {
+    margin-right: 16px;         /* Distanciar as coisas da imagem */ 
+    width: max-content;
+}
+
+#contato .container {
+    display: block;
+}
+
+.info_contato { 
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 300px;           /* Ocupar 300px na horizontal */ 
+    margin-bottom: 2px;
+    padding: 4px;
+}
+
+form textarea {
+    resize: none;           /* Bloquear o redimencionamento */
+    height: 100px;          /* Tamanho */
+}
+
+form button {
+    display: inline-flex;
+    background-color: rgb(255, 187, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    justify-content: center;
+    width: 120px;
+    margin-top: 10px;
+    padding: 4px;
+    cursor: pointer;
+} 
+
+form button:hover {
+    background-color: #314e9e;
+}
+
+@keyframes ciclo_de_cores {
+    0% { outline-color: red; }
+    14% { outline-color: orange; }
+    28% { outline-color: yellow; }
+    42% { outline-color: green; }
+    57% { outline-color: blue; }
+    71% { outline-color: indigo; }
+    85% { outline-color: violet; }
+    100% { outline-color: red; }
+}
+
+/* Estilos para o input */
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    outline: none; /* Remova o outline padrão */
+}
+
+/* Aplica a animação no foco */
+input:focus, textarea:focus {
+    outline: 1px solid;
+    border:none;
+    animation: ciclo_de_cores 2s linear infinite;
+}
